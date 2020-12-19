@@ -1,0 +1,41 @@
+.container__overcategories {
+    display: flex;
+    max-width: 100%;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__overcategories .strong {
+    max-width: 100%;
+    width: 30rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding-left: 2rem;
+    padding-top: 3rem;
+}
+
+.container__overcategories .click {
+    margin-top: 2rem;
+    border: 1px solid black;
+    display: inline-block;
+
+}
+
+.container__categories {
+    padding: 6rem;
+    max-width: 100%;
+    width: 75rem;
+    background: black;
+    color: white;
+    column-count: 2;
+}
+
+.container__categories li {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem;
+}

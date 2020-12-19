@@ -1,0 +1,138 @@
+#container-category {
+    max-width: 100%;
+    padding: 2rem;
+}
+
+.event-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding-bottom: 2rem;
+}
+
+.detail-left {
+    width: 50%;
+    max-width: 100%;
+}
+
+.detail-left img {
+    max-width: 100%;
+    width: 35rem;
+    height: auto;
+}
+
+.event-place {
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+    font-weight: 600;
+}
+
+.event-place svg {
+    width: 1.5rem;
+}
+
+.event-hour {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.extra {
+    list-style: none;
+    word-break: break-all;
+}
+
+.icons ul {
+    list-style: none;
+    display: flex;
+}
+
+.detail-right {
+    width: 50%;
+    max-width: 100%;
+}
+
+.detail-right p{
+    
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.75;
+}
+
+.detail-right .extra li{
+    font-weight: 600;
+}
+
+.icons li svg{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: rgb(218, 218, 218);
+    fill: black;
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
+
+.icons li svg:hover {
+    background: black;
+    fill: white;
+}
+
+.information h2 {
+    margin: 1rem 0;
+}
+
+.information p {
+    padding: 0;
+}
+
+.information a {
+    color: black;
+}
+
+@media (min-width: 48rem) {
+    #container-category {
+        display: flex;
+    }
+    .detail-right {
+        padding-top: 15rem;
+        padding-left: 2rem;
+    }
+}
+
+.other-events h2{
+    margin: 2rem 2rem;
+}
+
+.black {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    margin-bottom: 1rem;
+    margin: 2rem;
+    padding: 1.5rem 1rem;
+}
+
+.black p {
+    font-weight: 700;
+}
+
+.black .small {
+    font-weight: 400;
+}
+
+.event-button {
+    border: 2px solid black;
+    padding: 2rem 2rem;
+    display: inline-block;
+    margin: 2.5rem 2.5rem;
+}
+
+.event-button p {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.event-button:hover {
+    background: black;
+    color: white;
+    transition: all ease 0.4s;
+}
