@@ -84,12 +84,13 @@ const CATEGORY_API = "https://www.pgm.gent/data/gentsefeesten/categories.json";
 
             const listItems = filteredEvents.map((event) => {
                 return `
-                        <li>
-                        <a href='#${category}'>
-                        <h2>${event.start} </h2>
-                        <h2>${event.title} </h2>
-                        <h3>${event.location}</h3>
-                        </a>
+                        <li class="filteredEvents">
+                          <a href='${category}'>
+                            <img class="detail__eventimage" src="${event.image !== null ? event.image.thumb : "../app/static/img/default.jpg"}" loading="lazy">
+                            <h2 class="event_start">${event.start} </h2>
+                            <h2 class="event_title">${event.title} </h2>
+                            <h3>${event.location}</h3>
+                          </a>
                         </li>
                         `;
               })

@@ -1,11 +1,15 @@
 .container__overcategories {
     display: flex;
     max-width: 100%;
+    width: 95rem;
+    justify-content: space-between;
+    margin: 2rem auto;
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
+    margin-right: 2rem;
 }
 
 .container__overcategories .strong {
@@ -13,15 +17,14 @@
     width: 30rem;
     font-size: 2.5rem;
     font-weight: 900;
-    padding-left: 2rem;
     padding-top: 3rem;
 }
 
 .container__overcategories .click {
     margin-top: 2rem;
-    border: 1px solid black;
+    border: 3px solid black;
     display: inline-block;
-
+    padding: 1rem 1.5rem;
 }
 
 .container__categories {
@@ -39,3 +42,52 @@
     font-weight: 700;
     padding: 0.5rem;
 }
+
+.container__overday {
+    display: flex;
+    margin: 2rem auto;
+    max-width: 100%;
+    width: 95rem;
+}
+
+
+.filteredEvents {
+    display: flex;
+    max-width: 100%;
+    width: 15rem;
+    margin: 2rem;
+    list-style: none;
+}
+
+.filteredEvents a{
+    color:#000;
+}
+
+.event_title {
+    margin-bottom: 1rem;
+}
+
+.event_start {
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #fff;
+    background: #000;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+}
+
+.detail__eventimage {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.click {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+

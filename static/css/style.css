@@ -53,7 +53,6 @@ header svg {
 }
 
 .burger {
-
     cursor: pointer;
 }
 
@@ -80,8 +79,9 @@ header svg {
     padding: 10%;
 }
 
-.burger_items a:hover {
+.burger_items:hover {
     text-decoration: underline;
+    color: #fff;
 }
 
 .program__svg {
@@ -270,7 +270,6 @@ header svg {
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-
 nav img {
     max-width: 100%;
     width: 11.2rem;
@@ -310,14 +309,24 @@ nav img {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
 }
 
 .date {
-    background: #000;
     width: 20%;
     list-style-type: none;
     height: 6.5rem;
     font-size: 0.9rem;
+}
+
+.date:hover {
+    background: #fff;
+}
+
+.date a:hover {
+    color: #000;
 }
 
 @media (min-width: 36rem){
@@ -389,8 +398,14 @@ nav img {
         height: 20%;
         font-size: 1.3rem;
     }
+    .date:hover {
+        background: #000;
+    }
     .date a {
         color: #000;
+    }
+    .date a:hover {
+        color: #fff;
     }
     .date span {
         font-size: 1.3rem;
@@ -401,7 +416,7 @@ nav img {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
-    width: 70rem;
+    width: 85rem;
     margin: 2rem auto;
     justify-content: space-between;
 }
@@ -410,7 +425,6 @@ nav img {
     max-width: 100%;
     position: relative;
     overflow: hidden;
-
 }
 
 .info-event a {
@@ -422,6 +436,7 @@ nav img {
     list-style: none;
     margin-bottom: 1rem;
 }
+
 .list--event {
     max-width: 100%;
     position: relative;
@@ -438,13 +453,13 @@ nav img {
     height: 18rem;
     padding-bottom: 10%;
     object-fit: cover;
-
 }
 
 .event__title {
     font-size: 1.8rem;
     font-weight: 900;
-    padding-bottom: 1rem; ;
+    padding-bottom: 1rem;
+    width: 25rem;
 }
 
 .event__img:hover {
@@ -454,15 +469,6 @@ nav img {
 
 .head__event {
     margin-left: 0.5rem;
-    /* position: absolute;
-    background: #000;
-    color: #fff;
-    max-width: 100%;
-    width: 40%;
-    padding: 1rem;
-    font-size: 1.5rem;
-    bottom: 1.5rem;
-    left: 2rem; */
 }
 
 .list--day {
@@ -478,17 +484,11 @@ nav img {
     width: 15rem;
 }
 
-
-
-
-
-
-
 .container-news {
     margin: 2rem auto;
     /* margin-top: 2.5rem; */
     max-width: 100%;
-    width: 70rem;
+    width: 85rem;
 }
 
 .news {
@@ -540,15 +540,36 @@ nav img {
     padding: 0.5rem 1rem;
 }
 
-@media (min-width: 64rem) {
+.news-btn {
+    border: 2px solid black;
+    background: #fff;
+    color: #000;
+    padding: 1.5rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 
+.news-btn:hover {
+    background: #000;
+    color: #fff;
+    transition: all ease 0.2s
+}
+
+.container__doll {
+    max-width: 100%;
+    width: 85rem;
+    margin: 2rem auto;
 }
 
 .doll {
-    width: 100%;
+    max-width: 100%;
+    width: 100rem;
 }
 
 .twitter {
+    max-width: 100%;
+    width: 85rem;
+    margin: 2rem auto;
     padding: 1.2rem;  
     overflow: hidden;
 }
@@ -590,7 +611,7 @@ nav img {
         padding: 0;
         margin-top: 2rem;
         min-height: 30rem;
-        max-width: 70rem;
+        max-width: 85rem;
     }
     .twitter__img{
         background: url("../img/Knipsel.PNG") center center no-repeat;
@@ -603,10 +624,9 @@ nav img {
     }
 }
 
-
 .newsletter {
     max-width: 100%;
-    width: 90%;
+    width: 85rem;
     margin: 2rem auto;
 }
 
@@ -637,8 +657,6 @@ a.button_newsletter {
     display: block;
     padding: 0.75rem 1.5rem;
     border: 3px solid #000;
-    /* margin: 0 0.3em 0.3em 0; */
-    /* box-sizing: border-box; */
     text-decoration: none;
     font-weight: 600;
     background-color: #000;
@@ -653,7 +671,6 @@ a.button_footer {
     padding: 0.75rem 1.5rem;
     border: 3px solid #000;
     margin-top: 1rem;
-    /* box-sizing: border-box; */
     text-decoration: none;
     font-weight: 600;
     background-color: #000;
@@ -756,7 +773,6 @@ a.button_footer:hover {
     background: #000;
     color: #f5f6fa;
     padding: 1rem 2rem;
-
     transition: 400ms;
 }
 
@@ -778,9 +794,3 @@ a.button_footer:hover {
     border-radius: 8px;
     cursor: pointer;
 }
-
-
-
-
-
-
